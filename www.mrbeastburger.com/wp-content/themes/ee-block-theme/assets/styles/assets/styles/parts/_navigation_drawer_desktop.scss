@@ -1,0 +1,47 @@
+/* Desktop Navigation Drawer */
+@mixin navigation-drawer-desktop-open {
+	opacity: 1;
+	transform: translateY(100%);
+}
+header {
+	#navigation-drawer-desktop,
+	.navigation-drawer-desktop {
+		position: absolute;
+		bottom: 3px;
+		padding-top: 3px;
+		transform: translateY(0%);
+		inset-inline: 0;
+		opacity: 0;
+		transition: 0.3s transform ease-in-out, 0.25s opacity ease-in;
+		z-index: -1;
+		--fade-in-duration: 0.025s;
+		--fade-in-initial-delay: 0.15s;
+		@media (prefers-reduced-motion) {
+			transition: none;
+		}
+
+		&.open,
+		&:hover,
+		&:focus-within {
+			@include navigation-drawer-desktop-open;
+		}
+	}
+}
+
+#navigation-drawer-desktop-link,
+.navigation-drawer-desktop-link {
+	&:hover,
+	&:focus-within {
+		#navigation-drawer-desktop,
+		.navigation-drawer-desktop {
+			@include navigation-drawer-desktop-open;
+		}
+
+		.fade-in {
+			animation-name: FadeIn;
+			animation-duration: 0.25s;
+			animation-timing-function: linear;
+			animation-fill-mode: both;
+		}
+	}
+}

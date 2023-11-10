@@ -1,0 +1,41 @@
+/* Animations */
+@keyframes FadeIn {
+	0% {
+		opacity: 0;
+		transform: translatex(1.5em);
+	}
+
+	85% {
+		opacity: 1;
+		transform: translatex(-0.05em);
+	}
+
+	100% {
+		transform: translateX(1);
+	}
+}
+@media (prefers-reduced-motion) {
+	@keyframes FadeIn {
+		100% {
+			transform: unset;
+		}
+	}
+}
+
+.fade-in-on-load {
+	animation-name: FadeIn;
+	animation-duration: 0.25s;
+	animation-timing-function: linear;
+	@media (prefers-reduced-motion) {
+		animation-name: unset;
+	}
+}
+
+// Add class for delay.
+@for $i from 1 through 20 {
+	.delay-#{$i} {
+		animation-delay: calc(
+			var(--fade-in-initial-delay) + calc(var(--fade-in-duration) * #{$i})
+		);
+	}
+}

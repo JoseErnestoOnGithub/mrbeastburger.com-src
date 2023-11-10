@@ -1,0 +1,30 @@
+@use '../parts/utilities' as *;
+
+.fry {
+	position: relative;
+	z-index: 1;
+	pointer-events: none;
+
+	&.absolute {
+		position: absolute;
+	}
+	&.top {
+		margin-top: -6em;
+	}
+	&:not(.alignright) {
+		margin-left: -3em !important;
+	}
+	&.alignright {
+		margin-right: -3em !important;
+	}
+
+	@include for-tablet {
+		max-width: 90px !important;
+		&:not(.alignright) {
+			margin-left: -1em !important;
+		}
+		&.alignright {
+			margin-right: -1em !important;
+		}
+	}
+}
