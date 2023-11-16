@@ -33,7 +33,6 @@ The stack trace of the exception can be seen below.
     at asyncGeneratorStep (main.min.js?ver=v1.0.2:1:6842)
     at i (main.min.js?ver=v1.0.2:1:7060)
 ```
-<br/>
 ![Screenshot 2023-11-16 131000](https://github.com/JoseErnestoOnGithub/mrbeastburger.com-src/assets/115112109/d06f91e8-da66-41f7-a743-af90d1fd51db)
 In this screenshot, i attempted to compare these two files, which are versions 1.0.2 to 1.0.3, but unfortunately, i got no difference, because the versions 1.0.2 and 1.0.3 i was trying to compare have 1.0.3, which does not exist in the URL of the script.
 ![Screenshot 2023-11-16 131756](https://github.com/JoseErnestoOnGithub/mrbeastburger.com-src/assets/115112109/78324575-6617-4af4-b413-ecee6cc97ecd)
