@@ -3,7 +3,7 @@ The source version can be pretty buggy. The list can see known bugs and quirks w
 * CORS must be disabled, otherwise, you will not be able to accept the cookies.
 * The links on the header might point to the original version instead of the source version.
 * If the accessibility tools are applied, they would not be able to restore to the default settings.
-* The locations page does not function properly.
+* The locations page does not function properly. <a href="https://joseernestoongithub.github.io/mrbeastburger.com-src/#why-is-the-locations-page-not-working">Please see the following for more information.</a>
 
 The following workarounds can be used to fix those bugs &amp; quirks:
 1. Install the <a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino">CORS Unblock</a> extension. Go back to the page that is experiencing the problem, and reload the page for the changes to take effect.
